@@ -63,7 +63,7 @@ The Chat participates directly communicates with a language model (e.g., GitHub 
 
 Next, the Chat Participant is queried again to provide an analysis in form of a Jupyer Notebook. Depending on whether the domain belongs to one of the categories for which expert knowledge exists, we either keep the prompt [generic](https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getAnalysis.md) or make it [domain-specific](https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getCategoryAnalysis.md).
 
-Based on the results, the Jupyer Notebook is then generated and executed. Depending on the Pyhon configuration, one may need to select a [Python Environment](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_python-environments) from the dropdown here with which to run. Once executed, one can now scroll through the notebook to see the suggested analysis already applied on the local data and interpret the results.
+Based on the results, a Jupyer Notebook is then generated and executed. Depending on the local Pyhon configuration, one may need to select a [Python Environment](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_python-environments) from the dropdown with which to run. Once executed, one can now conveniently scroll through the notebook to see the analyses already applied on the local data and interpret the results.
 
 <br><br>
 <figure>
