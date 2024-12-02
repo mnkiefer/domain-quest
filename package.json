@@ -1,0 +1,81 @@
+{
+    "name": "domain-quest",
+    "displayName": "Domain Quest",
+    "description": "VS Code extension that generates Jupyter Notebooks containing domain-specific insights based on your data.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.95.0"
+    },
+    "categories": [
+        "AI",
+        "Education",
+        "Data Science",
+        "Notebooks"
+    ],
+    "activationEvents": [
+        "onCommand:domainQuest.run",
+        "onStartupFinished"
+    ],
+    "extensionDependencies": [
+        "GitHub.copilot",
+        "ms-toolsai.jupyter"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "domainQuest.run",
+                "title": "Run Domain Quest",
+                "category": "Domain Quest"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "domainQuest.run",
+                    "when": "resourceExtname == .csv",
+                    "group": "navigation@10"
+                }
+            ]
+        }
+    },
+    "main": "./out/extension.js",
+    "scripts": {
+        "compile": "tsc -p ./ && cpx 'images/*.{jpg,png}' out/ && cpx 'src/prompts/*.{json,md}' out/prompts/",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src",
+        "test": "vscode-test",
+        "dev": "npm run esbuild-base -- --sourcemap --watch",
+        "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+        "vscode:prepublish": "npm run compile",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "@types/debug": "^4.1.12",
+        "@types/mocha": "^10.0.9",
+        "@types/node": "^20.17.9",
+        "@types/vscode": "^1.95.0",
+        "@typescript-eslint/eslint-plugin": "^8.10.0",
+        "@typescript-eslint/parser": "^8.7.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "@vscode/vsce": "^3.2.1",
+        "chai": "^5.1.2",
+        "cpx": "^1.5.0",
+        "esbuild": "^0.24.0",
+        "eslint": "^9.13.0",
+        "mocha": "^10.8.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^4.0.0",
+        "vscode": "^1.1.37",
+        "tslint": "^5.0.0"
+    },
+    "dependencies": {
+        "@vscode/chat-extension-utils": "^0.0.0-alpha.2",
+        "@vscode/prompt-tsx": "^0.3.0-alpha.13",
+        "@vscode/python-extension": "^1.0.5",
+        "danfojs-node": "^1.1.2",
+        "debug": "^4.3.7",
+        "plotly.js-dist-min": "^2.35.2"
+    }
+}

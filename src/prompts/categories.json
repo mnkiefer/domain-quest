@@ -1,0 +1,6 @@
+{
+    "healthcare": {
+        "prompt": "healthcare.md",
+        "description": "Prompts related to healthcare and wellness."
+    }
+}
