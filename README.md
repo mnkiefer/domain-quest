@@ -15,7 +15,7 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 
 * **Data Detection**: Scans your workspace for `CSV` files.
   
-* **AI-driven Content**: Communicates with [GitHub Copilot based chat participant](./src/prompts/base.md) to determine content.
+* **AI-driven Content**: Communicates with a GitHub Copilot based Chat participant to determine content.
 
 * **Domain-specific Insights**: Provides domain-specific analyses from data headers & types.
 
