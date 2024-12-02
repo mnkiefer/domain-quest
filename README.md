@@ -57,7 +57,11 @@ This opens a new workspace where you can test the extension with some of the `CS
 
 When the extension is activated, it initializes a custom [Chat participant](https://code.visualstudio.com/api/extension-guides/chat#develop-a-chat-extension) based on GitHub Copilot and scans the workspace for `CSV` files.
 
-For all `CSV` files found (this also works on file selection and triggering the command **Run Domain Quest**), headers and their types are extracted and the first [prompt to detect the domain}(https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getDomain.md) for this data is crafted and sent to the Chat participant which communicates with a language model (e.g., GitHub Copilot, GPT-4o) to determine the domain of the data and checks if this domain belongs to a known category.
+For all `CSV` files found (this also works on file selection and triggering the command **Run Domain Quest**), headers and their types are extracted and the first [prompt to detect the domain](https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getDomain.md) for this data is crafted and sent to the Chat participant which communicates with a language model (e.g., GitHub Copilot, GPT-4o) to determine the domain of the data and checks if this domain belongs to a known category. These categories reflect more relevant analysis techniques provided by domain expert (e.g. we have provided one for the [healthcare](https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/healthcare.md) category).
+
+Next, the Chat Participant is queried again to provide an analysis in form of a Jupyer Notebook. Depending on whether the domain belonged to one of the categories for which expert knowledge exists, we either keep it [generic](https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getAnalysis.md) or make it [domain-specific](https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getCategoryAnalysis.md).
+
+Based on the results, the Jupyer Notebook is then generated and executed. Depending on the Pyhon configuration, one may need to select a [Python Environment](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management#_python-environments) from the dropdown here with which to run. Once executed, one can now scroll through the notebook to see the suggested analysis already applied on the local data and interpret the results.
 
 <br><br>
 <figure>
@@ -65,7 +69,7 @@ For all `CSV` files found (this also works on file selection and triggering the 
   <video src="https://github.com/user-attachments/assets/fcf02847-8ced-42b7-b24a-5cbfea392cb6" controls="controls" />    
 </div>
   <figcaption>
-    <b>Video</b>: <i>Example of running Domain Quest agent for the `heart-attack-analysis` dataset</i>
+    <b>Video</b>: <i>Example of running Domain Quest agent for the [`heart-attack-analysis` dataset](./sample/heart-attack-analysis)</i>
   </figcaption>
 </figure>
 <br><br><br>
