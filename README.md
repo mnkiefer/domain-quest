@@ -35,7 +35,7 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 <br><br>
 <figure>
 <div align="center">
-  <video src="[https://github.com/user-attachments/assets/14e8ea43-2c75-49a6-abf2-3c8ae803c4e9](https://github.com/user-attachments/assets/fcf02847-8ced-42b7-b24a-5cbfea392cb6)" controls="controls" />    
+  <video src="https://github.com/user-attachments/assets/fcf02847-8ced-42b7-b24a-5cbfea392cb6" controls="controls" />    
 </div>
   <figcaption>
     <b>Video</b>: <i>Example of running Domain Quest agent for the `heart-attack-analysis` dataset</i>
