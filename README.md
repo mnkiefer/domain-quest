@@ -53,3 +53,4 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
   * [Heart Attack Analysis & Prediction](https://www.kaggle.com/code/kanncaa1/heart-attack-analysis-prediction)
   * [Red Wine Quality](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009)
   * [Video Game Sales](https://www.kaggle.com/datasets/gregorut/videogamesales)
+* Logo from [FREEP!K](https://www.freepik.com/free-vector/ai-powered-marketing-tools-abstract-concept-illustration_12291062.htm#fromView=search&page=1&position=7&uuid=d566a5ec-64b2-4295-a489-008dd89b8e1c)
