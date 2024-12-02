@@ -14,19 +14,20 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 ## Features
 
 * **Data Detection**: Scans your workspace for `CSV` files.
-
+  
 * **AI-driven Content**: Communicates with [GitHub Copilot based chat participant](./src/prompts/base.md) to determine content.
 
 * **Domain-specific Insights**: Provides domain-specific analyses from data headers & types.
 
-* **Notebook Generation**: Creates notebooks with contents tailored to your domain.
+* **Notebook Generation**: Generates notebooks with contents tailored to your domain.
 
-* **Automated Visualization**: Generates clear and impactful visualizations.
+* **Automated Visualization**: Creates clear and impactful visualizations.
 
 
 ## Requirements
 
-- [GitHub Copilot Chat](https://code.visualstudio.com/api/extension-guides/chat)
+- [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
+- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 
