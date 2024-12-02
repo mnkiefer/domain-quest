@@ -15,7 +15,7 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 
 * **Data Detection**: Scans your workspace for `CSV` files.
   
-* **AI-driven Content**: Communicates with a GitHub Copilot based Chat participant to determine content.
+* **AI-driven Content**: Communicates with a GitHub Copilot based Chat participant to determine the content.
 
 * **Domain-specific Insights**: Provides domain-specific analyses from data headers & types.
 
@@ -24,7 +24,7 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 * **Automated Visualization**: Creates clear and impactful visualizations.
 
 
-## Prerequites
+## Prerequisites
 
 - [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
