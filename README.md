@@ -69,7 +69,7 @@ Based on the results, the Jupyer Notebook is then generated and executed. Depend
   <video src="https://github.com/user-attachments/assets/fcf02847-8ced-42b7-b24a-5cbfea392cb6" controls="controls" />    
 </div>
   <figcaption>
-    <b>Video</b>: <i>Example of running Domain Quest agent for the [`heart-attack-analysis` dataset](./sample/heart-attack-analysis)</i>
+    <b>Video</b>: <i>Example of running Domain Quest agent for the <b>heart-attack-analysis</b> dataset</i>
   </figcaption>
 </figure>
 <br><br><br>
