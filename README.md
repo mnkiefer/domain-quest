@@ -46,11 +46,11 @@ npm install
 npm run compile
 ```
 
-To run this extension, go to:
+To run it, go to:
 
-**Rund and Debug** > **Run Extension**
+**Run and Debug** > **Run Extension**
 
-This opens a new workspace where you can test the extension with some of the `CSV` data in [`samples`](./samples).
+This opens up a new workspace where you can now test the extension with some of the `CSV` data provided in [`samples`](./samples).
 
 
 ## How it works
