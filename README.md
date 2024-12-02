@@ -24,14 +24,40 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 * **Automated Visualization**: Creates clear and impactful visualizations.
 
 
-## Requirements
+## Prerequites
 
 - [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 
-## Example
+## Setup
+
+Install all of the listed prerequisites and clone this extension:
+
+```sh
+git clone https://github.com/mnkiefer/domain-quest
+```
+
+Navigate to the directory of your clone and install/compile:
+
+```sh
+npm install
+npm run compile
+```
+
+To run this extension, go to:
+
+**Rund and Debug** > **Run Extension**
+
+This opens a new workspace where you can test the extension with some of the `CSV` data in [`samples`](./samples).
+
+
+## How it works
+
+When the extension is activated, it initializes a custom [Chat participant](https://code.visualstudio.com/api/extension-guides/chat#develop-a-chat-extension) based on GitHub Copilot and scans the workspace for `CSV` files.
+
+For all `CSV` files found (this also works on file selection and triggering the command **Run Domain Quest**), headers and their types are extracted and the first [prompt to detect the domain}(https://github.com/mnkiefer/domain-quest/blob/main/src/prompts/getDomain.md) for this data is crafted and sent to the Chat participant which communicates with a language model (e.g., GitHub Copilot, GPT-4o) to determine the domain of the data and checks if this domain belongs to a known category.
 
 <br><br>
 <figure>
@@ -43,6 +69,7 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
   </figcaption>
 </figure>
 <br><br><br>
+
 
 ## References
 
