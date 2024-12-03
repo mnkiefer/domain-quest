@@ -41,7 +41,9 @@
     "main": "./out/extension.js",
     "scripts": {
         "compile": "tsc -p ./ && cpx 'images/*.{jpg,png}' out/ && cpx 'src/prompts/*.{json,md}' out/prompts/",
-        "watch": "tsc -watch -p ./",
+        "watch:ts": "tsc -watch -p ./",
+        "watch:assets": "cpx 'images/*.{jpg,png}' out/ --watch & cpx 'src/prompts/*.{json,md}' out/prompts/ --watch",
+        "watch": "npm-run-all --parallel watch:ts watch:assets",
         "pretest": "npm run compile && npm run lint",
         "lint": "eslint src",
         "test": "vscode-test",
@@ -59,6 +61,7 @@
         "cpx": "^1.5.0",
         "esbuild": "^0.24.0",
         "eslint": "^9.13.0",
+        "npm-run-all": "^4.1.5",
         "typescript": "^4.0.0"
     },
     "dependencies": {
