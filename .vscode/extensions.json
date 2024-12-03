@@ -3,6 +3,7 @@
 		"dbaeumer.vscode-eslint",
 		"ms-vscode.extension-test-runner",
 		"GitHub.copilot",
-		"ms-toolsai.jupyter"
+		"ms-toolsai.jupyter",
+		"ms-python.python"
 	]
 }
