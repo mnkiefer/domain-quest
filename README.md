@@ -27,8 +27,8 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 ## Prerequisites
 
 - [Python 3](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter)
-- [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
-- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+
+- VS Code Extensions: [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot), [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter), [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 
 ## Setup
