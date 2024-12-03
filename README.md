@@ -14,13 +14,9 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 ## Features
 
 * **Data Detection**: Scans your workspace for `CSV` files.
-  
 * **AI-driven Content**: Communicates with a GitHub Copilot based Chat participant to determine the content.
-
 * **Domain-specific Insights**: Provides domain-specific analyses from data headers & types.
-
 * **Notebook Generation**: Generates notebooks with contents tailored to your domain.
-
 * **Automated Visualization**: Creates clear and impactful visualizations.
 
 
@@ -31,24 +27,30 @@ Whether your focus is healthcare, finance, marketing, or another field, you can 
 - VS Code Extensions: [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot), [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter), [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 
+
+
 ## Setup
 
-Install all of the listed prerequisites and clone this extension:
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mnkiefer/domain-quest)
 
-```sh
-git clone https://github.com/mnkiefer/domain-quest
-```
+For local development:
+    
+  Install all of the listed prerequisites and clone this extension:
+  
+  ```sh
+  git clone https://github.com/mnkiefer/domain-quest
+  ```
+  
+  Navigate to the directory of your clone and install/compile:
+  
+  ```sh
+  npm install
+  npm run compile
+  ```
 
-Navigate to the directory of your clone and install/compile:
+## How to run
 
-```sh
-npm install
-npm run compile
-```
-
-To run it, go to:
-
-**Run and Debug** > **Run Extension**
+In VS Code, go to: **Run and Debug** > **Run Extension**
 
 This opens up a new workspace where you can now test the extension with some of the `CSV` data provided in [`samples`](./samples).
 
